@@ -196,9 +196,9 @@ class Board:
         if len(connection) == 0:
             return None
         elif self.square_value(connection[0]) == Symbol.CIRCLE:
-            return Symbol.CIRCLE
-        else:
             return Symbol.CROSS
+        else:
+            return Symbol.CIRCLE
 
     def is_gameover(self) -> bool:
         """Check for gameover
